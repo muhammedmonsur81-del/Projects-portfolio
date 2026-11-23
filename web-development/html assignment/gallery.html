@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery — My Cooking Hobby</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVIGATION — Consistent across all pages
+    ============================================ -->
+    <nav>
+        <div class="container">
+            <div class="nav-brand">
+                My Cooking <span>Hobby</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    MAIN CONTENT — Gallery
+    ============================================ -->
+    <main>
+        <section class="section-padding">
+            <div class="container">
+
+                <h1 class="text-center">Our Kitchen <span>Gallery</span></h1>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
+                    A little taste of what we cook and create. Discover the rich flavors of Nigerian cuisine.
+                </p>
+
+                <!-- ============================================
+                GALLERY FLEX — Flexbox (Required)
+                ============================================ -->
+                <div class="gallery-flex">
+
+                    <!-- Gallery Item 1 — Clickable Image -->
+                    <div class="gallery-item">
+                        <a href="images/Jollof rice.jpg" target="_blank">
+                            <img src="images/Jollof rice.jpg" alt="Nigerian Jollof Rice" />
+                        </a>
+                        <div class="caption">
+                            <h3>Jollof Rice</h3>
+                            <p>A classic Nigerian dish &mdash; rich, flavorful, and loved across West Africa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <img src="images/suya.jpg" alt="Suya" />
+                        <div class="caption">
+                            <h3>Suya</h3>
+                            <p>Spicy grilled meat skewers, a popular street food across Nigeria.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 — Specificity Challenge Example -->
+                    <div class="gallery-item specificity-demo" id="specificity-demo-id">
+                        <img src="images/Moi-Moi.webp" alt="Moi-Moi" />
+                        <div class="caption">
+                            <h3>Moi-Moi</h3>
+                            <p>Steamed bean pudding, a protein-rich delicacy enjoyed at parties and family gatherings.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <img src="images/pounded yam and egusi soup.jpg" alt="Pounded Yam and Egusi Soup" />
+                        <div class="caption">
+                            <h3>Pounded Yam &amp; Egusi Soup</h3>
+                            <p>A hearty meal featuring melon seed soup with assorted meats and vegetables.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <img src="images/Pepper soup.webp" alt="Pepper Soup" />
+                        <div class="caption">
+                            <h3>Pepper Soup</h3>
+                            <p>Spicy broth with assorted meat &mdash; a warming dish perfect for any occasion.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <img src="images/Amala and ewedu soup.webp" alt="Amala and Ewedu Soup" />
+                        <div class="caption">
+                            <h3>Amala &amp; Ewedu Soup</h3>
+                            <p>A traditional Yoruba dish made from yam flour and jute leaves, served with stew.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ============================================
+                QUOTE BANNER
+                ============================================ -->
+                <div style="text-align: center; margin-top: var(--spacing-xl); padding: var(--spacing-lg); background-color: var(--cream); border-radius: var(--border-radius-lg);">
+                    <p style="font-size: 1.3rem; font-weight: 600; color: var(--secondary-red);">
+                        &#127837; Different recipes. Better meals. Stronger tomorrow.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+    FOOTER — Global footer
+    ============================================ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Cooking Hobby. All rights reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.2rem;">
+                Built by Group I &mdash; Faculty of Computing.
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="table.html">Table</a>
+                <a href="form.html">Form</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

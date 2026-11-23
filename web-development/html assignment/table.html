@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table — My Cooking Hobby</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVIGATION — Consistent across all pages
+    ============================================ -->
+    <nav>
+        <div class="container">
+            <div class="nav-brand">
+                My Cooking <span>Hobby</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="table.html" class="active">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    MAIN CONTENT — Tables
+    ============================================ -->
+    <main>
+        <section class="section-padding">
+            <div class="container">
+
+                <h1 class="text-center">Nigerian Dishes <span>Information</span></h1>
+                <p class="text-center" style="max-width: 700px; margin: 0 auto var(--spacing-lg);">
+                    Discover some of Nigeria's most popular dishes, their origins, preparation details, and nutritional information.
+                </p>
+
+                <!-- ============================================
+                TABLE 1 — with rowspan & colspan in thead
+                ============================================ -->
+                <h2>Popular Nigerian <span>Dishes</span></h2>
+                <p>Explore the rich diversity of Nigerian cuisine &mdash; each dish tells a story.</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">S/N</th>
+                                <th rowspan="2">Dish</th>
+                                <th rowspan="2">State/Region</th>
+                                <th colspan="2">Preparation Details</th>
+                                <th colspan="2">Nutritional Information</th>
+                                <th rowspan="2">Difficulty</th>
+                            </tr>
+                            <tr>
+                                <th>Cooking Time</th>
+                                <th>Main Ingredients</th>
+                                <th>Calories</th>
+                                <th>Food Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jollof Rice</td>
+                                <td>Lagos</td>
+                                <td>45 min</td>
+                                <td>Rice, Tomatoes, Pepper</td>
+                                <td>520 kcal</td>
+                                <td>Carbohydrate</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Gurasa</td>
+                                <td>North-west</td>
+                                <td>40 min</td>
+                                <td>Wheat Flour</td>
+                                <td>340 kcal</td>
+                                <td>Carbohydrate</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pounded Yam &amp; Egusi</td>
+                                <td>South-west</td>
+                                <td>70 min</td>
+                                <td>Yam, Melon Seeds</td>
+                                <td>710 kcal</td>
+                                <td>Carb. &amp; Protein</td>
+                                <td>Hard</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Moi-Moi</td>
+                                <td>South-west</td>
+                                <td>50 min</td>
+                                <td>Beans, Pepper, Oil</td>
+                                <td>350 kcal</td>
+                                <td>Protein</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Akara</td>
+                                <td>South-west</td>
+                                <td>25 min</td>
+                                <td>Beans, Pepper</td>
+                                <td>290 kcal</td>
+                                <td>Protein</td>
+                                <td>Easy</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Pepper Soup</td>
+                                <td>South-south</td>
+                                <td>40 min</td>
+                                <td>Goat Meat, Spices</td>
+                                <td>390 kcal</td>
+                                <td>Protein</td>
+                                <td>Easy</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Banga Soup</td>
+                                <td>Delta</td>
+                                <td>65 min</td>
+                                <td>Palm Fruit Extract</td>
+                                <td>600 kcal</td>
+                                <td>Fat &amp; Protein</td>
+                                <td>Hard</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Tuwo Shinkafa</td>
+                                <td>North-west</td>
+                                <td>55 min</td>
+                                <td>Rice Flour</td>
+                                <td>480 kcal</td>
+                                <td>Carbohydrate</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Amala &amp; Ewedu</td>
+                                <td>South-west</td>
+                                <td>55 min</td>
+                                <td>Yam Flour, Jute Leaves</td>
+                                <td>580 kcal</td>
+                                <td>Carb. &amp; Vitamins</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Efo Riro</td>
+                                <td>South-west</td>
+                                <td>45 min</td>
+                                <td>Spinach, Pepper</td>
+                                <td>410 kcal</td>
+                                <td>Vitamins &amp; Minerals</td>
+                                <td>Medium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ============================================
+                TABLE 2 — with rowspan & colspan in tbody
+                ============================================ -->
+                <h2 style="margin-top: var(--spacing-xl);">Weekly <span>Meal Plan</span></h2>
+                <p>A balanced diet guide featuring Nigerian meals for every day of the week.</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Meal</th>
+                                <th>Food Example</th>
+                                <th>Primary Nutrient</th>
+                                <th>Health Benefit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">Monday</td>
+                                <td>Breakfast</td>
+                                <td>Oatmeal &amp; Berries</td>
+                                <td>Fibre, Vitamin C</td>
+                                <td>Heart Health</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Grilled Chicken Salad</td>
+                                <td>Protein, Vitamin A</td>
+                                <td>Weight Management</td>
+                            </tr>
+                            <tr>
+                                <td>Dinner</td>
+                                <td>Salmon &amp; Asparagus</td>
+                                <td>Omega 3, Vitamin D</td>
+                                <td>Brain Health</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Tuesday</td>
+                                <td>Breakfast</td>
+                                <td>Greek Yoghurt &amp; Granola</td>
+                                <td>Calcium, Probiotics</td>
+                                <td>Bone &amp; Gut Health</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Amala &amp; Ewedu with Beef</td>
+                                <td>Carbs, Protein</td>
+                                <td>Energy &amp; Digestion</td>
+                            </tr>
+                            <tr>
+                                <td>Dinner</td>
+                                <td>Oha Soup &amp; Fufu</td>
+                                <td>Protein, Iron</td>
+                                <td>Blood Health</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Wednesday</td>
+                                <td>Breakfast</td>
+                                <td>Bread, Egg &amp; Hot Chocolate</td>
+                                <td>Protein, Calcium</td>
+                                <td>Bone Strength</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Fried Rice &amp; Chicken</td>
+                                <td>Carbs, Protein</td>
+                                <td>Energy Boost</td>
+                            </tr>
+                            <tr>
+                                <td>Dinner</td>
+                                <td>Oha Soup &amp; Fufu</td>
+                                <td>Protein, Iron</td>
+                                <td>Blood Health</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Thursday</td>
+                                <td>Breakfast</td>
+                                <td>Plantain Porridge</td>
+                                <td>Carbs, Potassium</td>
+                                <td>Heart Health</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Efo Riro &amp; Semovita</td>
+                                <td>Iron, Vitamins</td>
+                                <td>Immune Boost</td>
+                            </tr>
+                            <tr>
+                                <td>Dinner</td>
+                                <td>Grilled Fish &amp; Yam Fries</td>
+                                <td>Omega 3, Protein</td>
+                                <td>Brain Function</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Friday</td>
+                                <td>Breakfast</td>
+                                <td>Puff-Puff &amp; Zobo</td>
+                                <td>Carbs, Antioxidants</td>
+                                <td>Quick Energy</td>
+                            </tr>
+                            <tr>
+                                <td>Lunch</td>
+                                <td>Coconut Rice &amp; Beef</td>
+                                <td>Carbs, Protein</td>
+                                <td>Sustained Energy</td>
+                            </tr>
+                            <tr>
+                                <td>Dinner</td>
+                                <td>Afang Soup &amp; Eba</td>
+                                <td>Fibre, Protein</td>
+                                <td>Digestion</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align: center; font-weight: 600; background-color: var(--gold-light);">
+                                    <strong>Weekly Tip:</strong> Enjoy the rich flavors of Nigeria! Pair each meal with fresh vegetables and fruits for balanced nutrition &reg;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ============================================
+                TABLE 3 — Six Classes of Food
+                ============================================ -->
+                <h2 style="margin-top: var(--spacing-xl);">Six Classes of <span>Food</span></h2>
+                <p>Understanding the essential nutrients our bodies need for optimal health.</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Class of Food</th>
+                                <th>Primary Functions</th>
+                                <th>Key Nutrients</th>
+                                <th>Common Examples</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Carbohydrates</strong></td>
+                                <td>Provide energy &bull; Support brain function &bull; Spare protein for tissue repair</td>
+                                <td>Glucose, Fiber, Starch</td>
+                                <td>Rice, Yam, Bread, Cassava, Maize, Pasta</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Proteins</strong></td>
+                                <td>Build and repair tissues &bull; Produce enzymes &bull; Support immune function</td>
+                                <td>Amino Acids, Nitrogen</td>
+                                <td>Beans, Fish, Eggs, Meat, Chicken, Tofu</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fats and Oils</strong></td>
+                                <td>Store energy &bull; Keep body warm &bull; Protect organs &bull; Aid vitamin absorption</td>
+                                <td>Omega 3, Omega 6</td>
+                                <td>Butter, Palm Oil, Groundnut, Avocado, Olive Oil</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vitamins</strong></td>
+                                <td>Protect from diseases &bull; Boost immunity &bull; Support vision and skin</td>
+                                <td>Vitamins A, B, C, D, E, K</td>
+                                <td>Oranges, Mangoes, Carrots, Spinach, Tomatoes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minerals</strong></td>
+                                <td>Strengthen bones &bull; Support nerve function &bull; Regulate fluid balance</td>
+                                <td>Calcium, Iron, Potassium, Zinc</td>
+                                <td>Milk, Fish, Leafy Vegetables, Bananas, Nuts</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Water</strong></td>
+                                <td>Regulate temperature &bull; Aid digestion &bull; Flush toxins &bull; Lubricate joints</td>
+                                <td>Hydrogen, Oxygen</td>
+                                <td>Clean Water, Soups, Watermelon, Oranges</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+    FOOTER — Global footer
+    ============================================ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Cooking Hobby. All rights reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.2rem;">
+                Built by Group I &mdash; Faculty of Computing.
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="table.html">Table</a>
+                <a href="form.html">Form</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

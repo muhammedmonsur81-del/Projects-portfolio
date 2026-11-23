@@ -1,0 +1,812 @@
+/* Hobby - Cooking Global CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7fb;
+    color: #1a2a3a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ROOT VARIABLES — COLOR PALETTE */
+
+:root {
+    /* Primary Colors — BLUE THEME */
+    --primary-orange: #2980b9;
+    --primary-orange-dark: #1a5276;
+    --primary-orange-light: #5dade2;
+    
+    /* Secondary Colors */
+    --secondary-red: #1c2833;
+    --secondary-red-dark: #0e1a24;
+    --secondary-red-light: #2c3e50;
+    
+    /* Neutrals */
+    --cream: #f0f7fb;
+    --cream-dark: #dde8f0;
+    --brown-dark: #1a2a3a;
+    --brown-medium: #2c3e50;
+    --brown-light: #5d7a8a;
+    
+    /* White & Dark */
+    --white: #ffffff;
+    --off-white: #eaf2f8;
+    --black: #0d1a2a;
+    
+    /* Accent */
+    --gold: #f1c40f;
+    --gold-light: #f9e79f;
+    
+    /* Spacing */
+    --container-width: 1200px;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    
+    /* Borders */
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(26, 42, 58, 0.08);
+    --shadow-md: 0 4px 16px rgba(26, 42, 58, 0.12);
+    --shadow-lg: 0 8px 32px rgba(26, 42, 58, 0.16);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* TYPOGRAPHY — HEADINGS */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--secondary-red);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--secondary-red-dark);
+    line-height: 1.3;
+    margin-bottom: var(--spacing-md);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--brown-medium);
+    line-height: 1.4;
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 span,
+h2 span,
+h3 span {
+    color: var(--primary-orange);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--brown-medium);
+    margin-bottom: var(--spacing-md);
+}
+
+/* CONTAINER & LAYOUT UTILITIES */
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.section-padding {
+    padding: var(--spacing-xl) 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* BUTTONS — GLOBAL */
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition-medium);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.btn-primary {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-orange-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-red);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-red-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-orange);
+    border: 2px solid var(--primary-orange);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-orange);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* NAVIGATION — FLEXBOX (Required) */
+
+nav {
+    background-color: var(--cream);
+    padding: 1rem 0;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--primary-orange);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary-red);
+}
+
+.nav-brand span {
+    color: var(--primary-orange);
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: var(--brown-medium);
+    padding: 0.4rem 0;
+    transition: var(--transition-fast);
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--primary-orange);
+    border-bottom-color: var(--primary-orange);
+}
+
+.nav-links a.active {
+    color: var(--secondary-red);
+    border-bottom-color: var(--secondary-red);
+}
+
+/* FOOTER — GLOBAL */
+
+footer {
+    background-color: var(--brown-dark);
+    color: var(--cream);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    border-top: 4px solid var(--primary-orange);
+}
+
+footer p {
+    color: var(--cream);
+    opacity: 0.8;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    color: var(--gold-light);
+    transition: var(--transition-fast);
+}
+
+footer .footer-links a:hover {
+    color: var(--primary-orange);
+}
+
+/* CARDS — GLOBAL UTILITY */
+
+.card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-medium);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+/* HERO SECTION — HOME PAGE */
+
+.hero {
+    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero .tagline {
+    font-size: 1.3rem;
+    color: var(--brown-medium);
+    font-weight: 400;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero .btn-group {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero .stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.hero .stat-item {
+    text-align: center;
+}
+
+.hero .stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondary-red);
+}
+
+.hero .stat-label {
+    font-size: 0.9rem;
+    color: var(--brown-light);
+    font-weight: 500;
+}
+
+/* ABOUT US PAGE — CSS GRID (Required) */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.about-grid .member-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-medium);
+    border-top: 4px solid var(--primary-orange);
+}
+
+.about-grid .member-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.about-grid .member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto var(--spacing-md);
+    border: 3px solid var(--primary-orange);
+}
+
+.about-grid .member-card .member-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-red);
+}
+
+.about-grid .member-card .member-role {
+    font-size: 0.9rem;
+    color: var(--brown-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-grid .member-card .social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.about-grid .member-card .social-links a {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background-color: var(--cream);
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    color: var(--brown-medium);
+    transition: var(--transition-fast);
+}
+
+.about-grid .member-card .social-links a:hover {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+/* GALLERY PAGE — FLEXBOX (Required) */
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin-top: var(--spacing-lg);
+}
+
+.gallery-flex .gallery-item {
+    flex: 1 1 300px;
+    max-width: 380px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-medium);
+}
+
+.gallery-flex .gallery-item:hover {
+    box-shadow: var(--shadow-lg);
+    transform: scale(1.02);
+}
+
+.gallery-flex .gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.gallery-flex .gallery-item .caption {
+    padding: var(--spacing-md);
+    background-color: var(--white);
+}
+
+.gallery-flex .gallery-item .caption h3 {
+    font-size: 1.1rem;
+    color: var(--secondary-red);
+    margin-bottom: 0.2rem;
+}
+
+.gallery-flex .gallery-item .caption p {
+    font-size: 0.9rem;
+    color: var(--brown-light);
+    margin-bottom: 0;
+}
+
+/* Clickable image inside anchor tag — required */
+.gallery-flex .gallery-item a {
+    display: block;
+}
+
+.gallery-flex .gallery-item a img {
+    transition: var(--transition-medium);
+}
+
+.gallery-flex .gallery-item a:hover img {
+    opacity: 0.85;
+}
+
+/* TABLE PAGE — STRUCTURED TABLE */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: var(--spacing-lg);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+table thead {
+    background-color: var(--secondary-red);
+    color: var(--white);
+}
+
+table thead th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+}
+
+table tbody td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--cream-dark);
+    color: var(--brown-medium);
+}
+
+table tbody tr:hover {
+    background-color: var(--cream);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--off-white);
+}
+
+table tbody tr:nth-child(even):hover {
+    background-color: var(--cream);
+}
+
+/* Rowspan & Colspan cells get special styling */
+table td[colspan],
+table td[rowspan] {
+    background-color: var(--gold-light);
+    font-weight: 600;
+    color: var(--brown-dark);
+}
+
+table thead th[colspan],
+table thead th[rowspan] {
+    background-color: var(--secondary-red-dark);
+}
+
+/* FORM PAGE — CSS GRID (Required) */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-grid .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grid .form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-grid label {
+    font-weight: 600;
+    color: var(--brown-medium);
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--cream-dark);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition-fast);
+    background-color: var(--off-white);
+}
+
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus {
+    outline: none;
+    border-color: var(--primary-orange);
+    box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.15);
+    background-color: var(--white);
+}
+
+.form-grid .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.2rem;
+    padding-top: 0.3rem;
+}
+
+.form-grid .checkbox-group label {
+    font-weight: 400;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.form-grid .checkbox-group input[type="checkbox"],
+.form-grid .checkbox-group input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-orange);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.form-grid .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.2rem;
+    padding-top: 0.3rem;
+}
+
+.form-grid .radio-group label {
+    font-weight: 400;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.form-grid .submit-btn {
+    grid-column: 1 / -1;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-grid .submit-btn:hover {
+    background-color: var(--primary-orange-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* SPECIFICITY CHALLENGE — ID vs CLASS
+   
+   This demonstrates that ID selectors win over
+   class selectors due to higher specificity.
+   
+   Both target the same element, but the ID
+   style will apply. */
+
+/* CLASS selector — lower specificity (0,0,1,0) */
+.specificity-demo {
+    background-color: var(--gold-light) !important; /* !important overrides normally, but we'll let ID win */
+    color: var(--brown-medium);
+    padding: 1rem;
+    border: 3px solid var(--primary-orange);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+}
+
+/* ID selector — higher specificity (0,1,0,0) */
+#specificity-demo-id {
+    background-color: var(--secondary-red);
+    color: var(--white);
+    border-color: var(--secondary-red-dark);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+}
+
+/* 
+   If an element has class="specificity-demo" AND id="specificity-demo-id",
+   the ID styles will apply because:
+   
+   ID specificity: 0,1,0,0  (100)
+   Class specificity: 0,0,1,0  (10)
+   
+   ID wins — no !important needed, no order dependency.
+   
+   This satisfies the assignment requirement to demonstrate
+   intentional specificity conflict resolution.
+*/
+
+/* HTML ENTITIES — USAGE IN CONTENT
+   
+   &copy;  — Copyright symbol
+   &reg;   — Registered trademark
+   &amp;   — Ampersand
+   &trade; — Trademark
+   &mdash; — Em dash
+   &nbsp;  — Non-breaking space
+   &bull;  — Bullet point
+   
+   These will be used in the HTML content by each member.
+   Example: &copy; 2025 My Cooking Hobby. All rights reserved.
+            My Cooking Hobby &reg; 
+            Cooking &amp; Recipes */
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media (max-width: 992px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    
+    .hero h1 { font-size: 2.8rem; }
+    .hero .stats { gap: var(--spacing-lg); }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-md);
+    }
+    
+    .form-grid .form-group.full-width {
+        grid-column: 1;
+    }
+    
+    .form-grid .submit-btn {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .section-padding {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.1rem; }
+    
+    .hero h1 { font-size: 2.2rem; }
+    .hero .tagline { font-size: 1rem; }
+    .hero .stats { flex-direction: column; gap: var(--spacing-md); }
+    
+    nav .container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+    
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-flex .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    table thead th,
+    table tbody td {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .form-grid {
+        padding: var(--spacing-md);
+    }
+    
+    .form-grid input,
+    .form-grid select {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .form-grid .checkbox-group {
+        gap: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    .hero .btn-group { flex-direction: column; align-items: center; }
+    .hero .btn { width: 100%; max-width: 280px; }
+    
+    .nav-links {
+        gap: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+    
+    .nav-links a {
+        padding: 0.2rem 0.4rem;
+    }
+    
+    table thead th,
+    table tbody td {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.7rem;
+    }
+}

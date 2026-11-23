@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cooking Hobby — Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================
+    NAVIGATION — Consistent across all pages
+    ============================================ -->
+    <nav>
+        <div class="container">
+            <div class="nav-brand">
+                My Cooking <span>Hobby</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    HERO SECTION — With background image
+    ============================================ -->
+    <section class="hero" style="background: linear-gradient(135deg, rgba(41, 128, 185, 0.75), rgba(26, 42, 58, 0.85)), url('cookiesh.jpg') center/cover no-repeat; min-height: 80vh; display: flex; align-items: center; justify-content: center; color: var(--white);">
+        <div class="container" style="text-align: center;">
+            <h1 style="color: var(--white);">My Cooking Hobby</h1>
+            <p class="tagline" style="color: rgba(255, 255, 255, 0.9); font-size: 1.5rem; margin-bottom: var(--spacing-lg);">
+                Recipes Today, Flavors Tomorrow
+            </p>
+
+            <div class="btn-group">
+                <a href="gallery.html" class="btn btn-primary">Explore Recipes</a>
+                <a href="form.html" class="btn btn-outline" style="color: var(--white); border-color: var(--white);">Watch Tutorials</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats" style="margin-top: var(--spacing-xl);">
+                <div class="stat-item">
+                    <div class="stat-number" style="color: var(--white);">500+</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.8);">Recipes Shared</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" style="color: var(--white);">1000+</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.8);">Aspiring Chefs Reached</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" style="color: var(--white);">30+</div>
+                    <div class="stat-label" style="color: rgba(255, 255, 255, 0.8);">Communities Supported</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    MAIN CONTENT — Mission & Call to Action
+    ============================================ -->
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Passion, <span>A World of Flavors</span></h2>
+                    <p style="max-width: 700px; margin: 0 auto var(--spacing-lg);">
+                        Explore recipes, build culinary skills, and create a brighter tomorrow.
+                        Join us in celebrating the rich culture of Nigerian cuisine and beyond.
+                    </p>
+                    <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+        FEATURES / HIGHLIGHTS — Optional section
+        ============================================ -->
+        <section class="section-padding" style="background-color: var(--cream);">
+            <div class="container">
+                <h2 class="text-center">Why <span>Cook With Us?</span></h2>
+                <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-lg); justify-content: center; margin-top: var(--spacing-lg);">
+                    
+                    <div class="card" style="flex: 1 1 250px; max-width: 320px;">
+                        <h3>&#127798; Authentic Recipes</h3>
+                        <p>Discover traditional Nigerian dishes passed down through generations, with step-by-step guidance.</p>
+                    </div>
+
+                    <div class="card" style="flex: 1 1 250px; max-width: 320px;">
+                        <h3>&#128104;&#8205;&#127859; Community Driven</h3>
+                        <p>Share your own recipes, learn from others, and connect with food lovers across Nigeria.</p>
+                    </div>
+
+                    <div class="card" style="flex: 1 1 250px; max-width: 320px;">
+                        <h3>&#127757; Rich Culture</h3>
+                        <p>Every dish tells a story. Explore the diversity of Nigerian cuisine &mdash; one plate at a time.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+        QUOTE / INSPIRATION SECTION
+        ============================================ -->
+        <section class="section-padding">
+            <div class="container text-center">
+                <blockquote style="font-size: 1.5rem; font-style: italic; color: var(--brown-medium); max-width: 700px; margin: 0 auto;">
+                    &ldquo;Cooking is love made visible. Through food, we build communities, share stories, and create a better Nigeria.&rdquo;
+                </blockquote>
+                <p style="margin-top: var(--spacing-md); color: var(--brown-light);">
+                    &mdash; My Cooking Hobby Team &reg;
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+    FOOTER — Global footer
+    ============================================ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Cooking Hobby. All rights reserved.</p>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.2rem;">
+                Built by Group I - Faculty of Computing.
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="table.html">Table</a>
+                <a href="form.html">Form</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
