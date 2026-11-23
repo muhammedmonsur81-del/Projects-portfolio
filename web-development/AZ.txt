@@ -1,0 +1,2 @@
+this is just a framework of a web app that i am currently designing.
+it showcases my html, css and javascript skills
